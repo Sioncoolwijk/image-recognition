@@ -5,9 +5,13 @@ This Flask application leverages a pretrained ResNet50 model from PyTorch's mode
 
 ## Set-up
 `python -m venv .venv`
-`soure .venv/bin/activate`
+
+`source .venv/bin/activate`
+
 `pip install -r requirements.text`
+
 `cd image-recognition`
+
 `python app.py`
 
 This will start the Flask application on `localhost` with default port `5000`.
@@ -20,7 +24,7 @@ Open your web browser and go to `http://127.0.0.1:5000/` to access the applicati
 3.  If the image is successfully uploaded, it will be displayed on the web page.
 4.  Click on the "Detect Image" button to classify the image. The predicted animal and the confidence level will be displayed.
 
-## Screenshots
+## Screenshots from Application
 ![Screenshot 2024-04-05 at 17 04 17](https://github.com/Sioncoolwijk/image-recognition/assets/70899366/11bef60f-13f9-401a-a2aa-d5cd36bb8f41)
 
 ![Screenshot 2024-04-05 at 17 04 26](https://github.com/Sioncoolwijk/image-recognition/assets/70899366/05833058-9f65-4f14-a130-22dd055a6cd0)
