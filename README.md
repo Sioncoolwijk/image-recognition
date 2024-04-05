@@ -22,5 +22,7 @@ Open your web browser and go to `http://127.0.0.1:5000/` to access the applicati
 
 ## Screenshots
 ![Screenshot 2024-04-05 at 17 04 17](https://github.com/Sioncoolwijk/image-recognition/assets/70899366/11bef60f-13f9-401a-a2aa-d5cd36bb8f41)
+
 ![Screenshot 2024-04-05 at 17 04 26](https://github.com/Sioncoolwijk/image-recognition/assets/70899366/05833058-9f65-4f14-a130-22dd055a6cd0)
+
 ![Screenshot 2024-04-05 at 17 03 37](https://github.com/Sioncoolwijk/image-recognition/assets/70899366/1308f216-2d05-48b4-9ab9-57da632605e7)
