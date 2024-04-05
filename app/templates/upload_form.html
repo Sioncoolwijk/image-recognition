@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Animal Classifier</title>
+</head>
+
+<body>
+
+    <div class="centered-container">
+        <h1>Image detector</h1>
+        <form method=post enctype=multipart/form-data>
+            {% if not file_url and not name %}
+            <p>Upload an image</p>
+            <input class="styled" type=file value="Select image" name=file>
+            <input type=submit class="button" value=Upload>
+            {% endif %}
+            {% if not name %}
+            {% for msg in get_flashed_messages() %}
+            <p class="error-text">{{ msg }}<p>
+            {% endfor %}
+            {% endif %}
+        </form>
+
+        {% if file_url and not name %}
+        <div style="margin-top: 20px;">
+            <img src="{{ file_url }}" alt="Uploaded Image" style="width: 20em;">
+        </div>
+
+        <form action="/detect_image" method="post">
+            <input type="hidden" name="filename" value="{{ file_url }}">
+            <button type="submit" class="button">Detect Image</button>
+        </form>
+        {% endif %}
+
+        {% if name %}
+            <p>This image contains: {{ name }} </p>
+            <p>Confidence level: {{ prob }}%</p>
+        {% endif %}
+        
+    </div>
+
+
+</body>
+</html>
