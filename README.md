@@ -22,7 +22,7 @@ Open your web browser and go to `http://127.0.0.1:5000/` to access the applicati
 1.  Click on the "Select image" button and choose an image to upload.
 2.  Click on the "Upload" button to upload the image.
 3.  If the image is successfully uploaded, it will be displayed on the web page.
-4.  Click on the "Detect Image" button to classify the image. The predicted animal and the confidence level will be displayed.
+4.  Click on the "Detect Image" button to classify the image. The predicted object in the image and the confidence level will be displayed.
 
 ## Screenshots from Application
 ![Screenshot 2024-04-05 at 17 04 17](https://github.com/Sioncoolwijk/image-recognition/assets/70899366/11bef60f-13f9-401a-a2aa-d5cd36bb8f41)
