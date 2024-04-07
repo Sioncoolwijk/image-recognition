@@ -8,7 +8,7 @@ This Flask application leverages a pretrained ResNet50 model from PyTorch's mode
 
 `source .venv/bin/activate`
 
-`pip install -r requirements.text`
+`pip install -r requirements.txt`
 
 `cd image-recognition`
 
